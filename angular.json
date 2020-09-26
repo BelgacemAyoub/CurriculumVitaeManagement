@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cvTech"
+    }
+  },
+  "defaultProject": "cvTech",
+  "cli": {
+    "analytics": false
+  }
 }
