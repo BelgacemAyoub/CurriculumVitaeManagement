@@ -1,4 +1,5 @@
 <ol class="liste-group">
-  <app-item-cv></app-item-cv>
-  <app-item-cv></app-item-cv>
+  <app-item-cv *ngFor="let personne of personnes" (sendRequestToData0) = "selectPers($event)" [pers] = "personne">
+  </app-item-cv>
+  <!-- <app-item-cv (sendRequestToData0) = "selectPers($event)" [pers] = "personnes[1]"></app-item-cv>  -->
 </ol>

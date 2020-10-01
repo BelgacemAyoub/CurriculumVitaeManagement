@@ -1,0 +1,28 @@
+<!-- <p [ngClass]="{'Ca':false,
+'Barca':true,
+'Milan':false
+}">
+class works!
+</p> -->
+
+<p [ngClass]="{'Ca': Ca,
+'Barca': Barca,
+'Milan': Milan
+}">
+class works!
+</p>
+
+<button class = "btn btn-danger" (click)= "changeTeam ()">button</button>
+
+<div appHighlight>
+    Bonjour je teste une directive
+</div>
+
+<input *ngIf="yes"  type="text" class="form-control"  appRainbow>
+<button class="btn btn-primary" (click)="yes = !yes">hello</button>
+<p></p>
+<ol class="liste-group">
+    <li class="list-group-item" *ngFor="let t of teams">
+        {{t}}
+    </li>
+</ol>

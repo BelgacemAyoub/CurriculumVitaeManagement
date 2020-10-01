@@ -6,12 +6,12 @@
                    <img src="assets/images/rotating_card_thumb2.png">
                </div>
                <div class="user">
-                   <img class="img-circle" src="assets/images/Ayoub.jpg">
+                   <img class="img-circle" src="assets/images/{{person.path | defaultImage}}">
                </div>
                <div class="content">
                    <div class="main">
-                       <h3 class="name">John Marvel</h3>
-                       <p class="profession">CEO</p>
+                       <h3 class="name">{{person.firstname | titlecase}} {{person.name | titlecase}}</h3>
+                       <p class="profession">{{person.job}}</p>
                        <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
                    </div>
                    <div class="footer">
@@ -25,7 +25,7 @@
                </div>
                <div class="content">
                    <div class="main">
-                       <h4 class="text-center">Job Description</h4>
+                       <h4 class="text-center">{{person.age}} year</h4>
                        <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
 
                        <div class="stats-container">

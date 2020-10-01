@@ -9,8 +9,11 @@ import { DetailCvComponent } from './cvTech/detail-cv/detail-cv.component';
 import { ItemCvComponent } from './cvTech/item-cv/item-cv.component';
 import { ListeCvComponent } from './cvTech/liste-cv/liste-cv.component';
 import { FormsModule } from '@angular/forms';
-
-
+import { StyleComponent } from './directive/style/style.component';
+import { ClassComponent } from './directive/class/class.component';
+import { HighlightDirective } from './directive/highlight.directive';
+import { RainbowDirective } from './directive/rainbow.directive';
+import { DefaultImagePipe } from './cvTech/default-image.pipe';
 
 
 
@@ -20,7 +23,12 @@ import { FormsModule } from '@angular/forms';
     CvComponent,
     DetailCvComponent,
     ItemCvComponent,
-    ListeCvComponent
+    ListeCvComponent,
+    StyleComponent,
+    ClassComponent,
+    HighlightDirective,
+    RainbowDirective,
+    DefaultImagePipe
   ],
   imports: [
     BrowserModule,
