@@ -1,0 +1,25 @@
+
+<div class="container my-5">
+<form #formulaire="ngForm" (ngSubmit) = "addPersonne(formulaire)">  <!-- un objet formulaire qui va contenir un propriété name et qui va contenir le contenu de cet input   -->
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" ngModel class="form-control">   <!-- ngModel pour matcher le controle input avec le ts --> 
+
+    <label for="firstname">Firstname</label>
+    <input type="text" name="firstname" form id="firstname" ngModel class="form-control">
+
+    <label for="job">Job</label>
+    <input type="text" name="job" id="job" class="form-control"> 
+
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" ngModel class="form-control">
+
+    <label for="cin">Cin</label>
+    <input type="number" name="cin" id="cin" ngModel class="form-control">
+
+    <label for="path">Path</label>
+    <input required type="text" name="path" id="path" ngModel class="form-control">
+<br>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>
+
+</div>

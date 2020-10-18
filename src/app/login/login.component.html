@@ -1,0 +1,35 @@
+
+<form #loginFormulaire = "ngForm">
+    <label for="email">
+        Email
+    </label>    <!-- email c'est une propriété de controle Angular -->
+    <input 
+    email required 
+    type="text" 
+    class="form-control" id="email" 
+    ngModel name="email"
+    #emailInput = "ngModel"> 
+    <br>
+    <div class="alert alert-danger" *ngIf="emailInput.invalid && emailInput.dirty">
+        Votre email n'est pas valid
+    </div>   
+
+    <label for="pwd">
+        Password
+    </label>
+    <input
+    required
+    minlength = "4" 
+    type="password" 
+    ngModel name="password"
+    #pwdInput="ngModel"
+    class="form-control" id="pwd">
+    <br>
+    <div class="alert alert-danger" *ngIf="pwdInput.invalid && pwdInput.touched">
+        le password doit avoir au minimum 4 caractéres  
+    </div> 
+    <br>
+    <button [disabled] = "loginFormulaire.invalid" class="btn btn-primary" (click)="login(loginFormulaire)">   <!-- invalid est une propriété de ngForm c'est un élément angular -->
+        se connecter
+    </button>
+</form>

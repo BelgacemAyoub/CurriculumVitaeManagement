@@ -14,6 +14,15 @@ import { ClassComponent } from './directive/class/class.component';
 import { HighlightDirective } from './directive/highlight.directive';
 import { RainbowDirective } from './directive/rainbow.directive';
 import { DefaultImagePipe } from './cvTech/default-image.pipe';
+import { ColorComponent } from './color/color.component';
+import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
+import { HeaderComponent } from './header/header.component';
+import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
+import { DetailComponent } from './cvTech/detail/detail.component';
+import { AddCvComponent } from './cvTech/add-cv/add-cv.component';
+import { DeleteCvComponent } from './cvTech/delete-cv/delete-cv.component';
+import { ErrorComponent } from './error/error.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -28,7 +37,16 @@ import { DefaultImagePipe } from './cvTech/default-image.pipe';
     ClassComponent,
     HighlightDirective,
     RainbowDirective,
-    DefaultImagePipe
+    DefaultImagePipe,
+    ColorComponent,
+    EmbaucheComponent,
+    HeaderComponent,
+    RouterSimulatorComponent,
+    DetailComponent,
+    AddCvComponent,
+    DeleteCvComponent,
+    ErrorComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
